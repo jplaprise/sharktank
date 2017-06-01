@@ -1,10 +1,35 @@
 pragma solidity ^0.4.2;
 // Pool
 
+import "./Member.sol";
+
 contract Pool {
 
   uint public total;
   mapping (bytes32 => uint) public members;
+  address[] public membersList;
+
+  function pool() {
+
+  }
+
+  function enrollMore(string member, uint amount) {
+    var addedMember = new Member();
+    addedMember.setName(member);
+    addedMember.setMaxClaim(amount);
+
+    // add new member to the pool!
+    membersList.push(addedMember);
+
+    // update total
+    addAmountTotal(amount);
+
+  }
+
+  function processClaimMinimum(uint loss) {
+    // TODO add check if there is money first...
+    minAmountTotal(loss);
+  }
 
   function processClaim(string member, uint loss){
     // substract amount from members money
@@ -14,6 +39,7 @@ contract Pool {
     minAmountTotal(loss);
   }
 
+  // ***** DEPRECATED ******
   function enroll(string member, uint amount){
    // add member and his amount
    // calculate new total
@@ -35,7 +61,6 @@ contract Pool {
     total = total - amountToSubstract;
   }
 
-  // ******** TODO SOMETHING CLEVER **********
   function minAmountMember(bytes32 member, uint loss) {
     members[member] = members[member] - loss;
   }
@@ -44,6 +69,7 @@ contract Pool {
     return total;
   }
 
+  // ************ THIS IS NOT WORKING ************
   function getMembers() constant returns (uint){
     // return members;
   }

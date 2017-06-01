@@ -4,7 +4,17 @@ pragma solidity ^0.4.2;
 contract Member {
 
   string public name;
-  uint public max;
-  string public contractType;
+  uint public maxClaim;
+
+  function member(){
+  }
+
+  function setName(string aName) {
+    name = aName;
+  }
+
+  function setMaxClaim(uint max) {
+    maxClaim = max;
+  }
 	
 }

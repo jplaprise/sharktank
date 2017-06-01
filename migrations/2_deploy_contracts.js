@@ -6,6 +6,7 @@ var ProofOfExistence3 = artifacts.require("./ProofOfExistence3.sol");
 var Insurance = artifacts.require("./Insurance.sol");
 
 var Pool = artifacts.require("./Pool.sol");
+var Member = artifacts.require("./Member.sol");
 
 
 module.exports = function(deployer) {
@@ -19,5 +20,6 @@ module.exports = function(deployer) {
   deployer.deploy(Insurance);
 
   deployer.deploy(Pool);
+  deployer.deploy(Member);
  
 };
