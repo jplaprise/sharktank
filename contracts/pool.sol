@@ -8,8 +8,7 @@ contract Pool {
   uint public total;
   address[] public membersList;
 
-
-  function enrollMore(string member, uint amount) {
+  function enroll(string member, uint amount) {
     var addedMember = new Member();
     addedMember.setName(member);
     addedMember.setMaxClaim(amount);
@@ -38,11 +37,6 @@ contract Pool {
 
   function getTotal() constant returns (uint) {
     return total;
-  }
-
-  // ************ THIS IS NOT WORKING ************
-  function getMembers() constant returns (uint){
-    // return members;
   }
 
 }
