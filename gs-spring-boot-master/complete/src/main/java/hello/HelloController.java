@@ -19,6 +19,7 @@ public class HelloController {
 
         try {
             System.out.println("this is the version : " + block.getClientVersion());
+
         } catch (IOException e) {
             e.printStackTrace();
         }
