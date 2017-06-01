@@ -1,0 +1,167 @@
+{
+  "contract_name": "Pool",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "members",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "total",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "member",
+          "type": "string"
+        },
+        {
+          "name": "loss",
+          "type": "uint256"
+        }
+      ],
+      "name": "processClaim",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTotal",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "member",
+          "type": "bytes32"
+        },
+        {
+          "name": "loss",
+          "type": "uint256"
+        }
+      ],
+      "name": "minAmountMember",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getMembers",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amountToSubstract",
+          "type": "uint256"
+        }
+      ],
+      "name": "minAmountTotal",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amountToAdd",
+          "type": "uint256"
+        }
+      ],
+      "name": "addAmountTotal",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "member",
+          "type": "string"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "enroll",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "member",
+          "type": "bytes32"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "addAmountMember",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b6103f48061001c6000396000f300606060405236156100885763ffffffff60e060020a6000350416631f718bf4811461008a5780632ddbd13a146100af57806364a41c0f146100d1578063775a25e31461012b578063940c01a31461014d5780639eab525314610165578063d0e19d5014610187578063db5222d11461019c578063e50e2c63146101b1578063ec7d8d841461020b575bfe5b341561009257fe5b61009d600435610223565b60408051918252519081900360200190f35b34156100b757fe5b61009d610235565b60408051918252519081900360200190f35b34156100d957fe5b610129600480803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843750949650509335935061023b92505050565b005b341561013357fe5b61009d6102d5565b60408051918252519081900360200190f35b341561015557fe5b6101296004356024356102dc565b005b341561016d57fe5b61009d6102f6565b60408051918252519081900360200190f35b341561018f57fe5b6101296004356102fc565b005b34156101a457fe5b610129600435610309565b005b34156101b957fe5b610129600480803590602001908201803590602001908080601f01602080910402602001604051908101604052809392919081815260200183838082843750949650509335935061031592505050565b005b341561021357fe5b6101296004356024356103af565b005b60016020526000908152604090205481565b60005481565b60006002836000604051602001526040518082805190602001908083835b602083106102785780518252601f199092019160209182019101610259565b51815160209384036101000a6000190180199092169116179052604051919093019450919250508083038160008661646e5a03f115156102b457fe5b50506040515190506102c681836102dc565b6102cf826102fc565b5b505050565b6000545b90565b6000828152600160205260409020805482900390555b5050565b60005b90565b6000805482900390555b50565b60008054820190555b50565b60006002836000604051602001526040518082805190602001908083835b602083106103525780518252601f199092019160209182019101610333565b51815160209384036101000a6000190180199092169116179052604051919093019450919250508083038160008661646e5a03f1151561038e57fe5b50506040515190506103a081836103af565b6102cf82610309565b5b505050565b60008281526001602052604090208054820190555b50505600a165627a7a72305820b04016868e306eb7d30da7fa148322470fc9c99b2a8022cdda2deba9679866600029",
+  "networks": {
+    "1496227988023": {
+      "events": {},
+      "links": {},
+      "address": "0xca950a478a8b4d44f6e4d406dda2b463c5aa817c",
+      "updated_at": 1496331384756
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1496331384756
+}
